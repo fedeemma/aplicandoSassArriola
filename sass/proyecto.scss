@@ -1,0 +1,524 @@
+@import "variables";
+@import "servicios";
+@import "generales";
+@import "partidos";
+
+
+/* index */
+.club {
+    color: $color;
+    margin: 2rem;
+    display: flex;
+    font-size: $font-size;
+    border: 5px solid lightblue;
+    border-radius: 10%;
+    background-color: rgb(198, 235, 250);
+}
+
+.rac {
+    color: $color;
+    margin: 3rem;
+    text-shadow: rgb(150, 215, 243) 4px 2px;
+}
+
+.altura {
+    height: 30rem;
+    margin: 3rem;
+}
+
+footer {
+    background-color: rgb(54, 178, 250);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(17, 17, 224, 1) 36%, rgba(0, 212, 255, 1) 59%);
+
+    img {
+        width: 70%;
+    }
+
+    .redesFooter {
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1rem;
+
+        div {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+
+    footer {
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .redesFooter {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .redesFooter img {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    footer {
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(54, 178, 250);
+    }
+
+    .redesFooter {
+        height: 100%;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .redesFooter div {
+
+        width: 20%;
+        display: flex;
+        justify-content: center;
+
+    }
+}
+
+/* Partidos */
+
+.localia {
+    grid-area: h1Locales;
+}
+
+.fecha9 {
+    grid-area: juegoNueve;
+}
+
+.racVar {
+    grid-area: conArsenal;
+    width: 100%;
+}
+
+.fecha11 {
+    grid-area: juegoOnce;
+}
+
+.racVtigre {
+    grid-area: conTigre;
+    width: 100%;
+}
+
+.fecha13 {
+    grid-area: juegoTrece;
+}
+
+.racVboca {
+    grid-area: conBoca;
+    width: 100%;
+}
+
+.fecha15 {
+    grid-area: juegoQuince;
+}
+
+.racVslo {
+    grid-area: conSlo;
+    width: 100%;
+}
+
+.fecha17 {
+    grid-area: juegoDiesisiete;
+}
+
+.racVarg {
+    grid-area: conArgJr;
+    width: 100%;
+}
+
+.partidosEnCasa {
+    margin: 1rem 0;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    gap: 2rem;
+    grid-template-areas:
+        'h1Locales'
+        'juegoNueve'
+        'conArsenal'
+        'juegoOnce'
+        'conTigre'
+        'juegoTrece'
+        'conBoca'
+        'juegoQuince'
+        'conSlo'
+        'juegoDiesisiete'
+        'conArgJr';
+    justify-items: center;
+}
+
+@media screen and (min-width: 600px) {
+    .partidosEnCasa {
+
+        .h1 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .localia {
+        grid-area: h1Locales;
+        display: flex;
+        align-items: $align-items;
+    }
+
+
+    .fecha9 {
+        grid-area: juegoNueve;
+        display: flex;
+        align-items: $align-items;
+    }
+
+    .fecha11 {
+        grid-area: juegoOnce;
+        display: flex;
+        align-items: $align-items;
+    }
+
+    .fecha13 {
+        grid-area: juegoTrece;
+        display: flex;
+        align-items: $align-items;
+    }
+
+    .fecha15 {
+        grid-area: juegoQuince;
+        display: flex;
+        align-items: $align-items;
+    }
+
+    .fecha17 {
+        grid-area: juegoDiesisiete;
+        display: flex;
+        align-items: $align-items;
+    }
+
+    .partidosEnCasa {
+        margin: 1rem 0 3rem 0;
+        padding: 0 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 5rem auto;
+        gap: 2rem;
+        grid-template-areas:
+            'h1Locales h1Locales'
+            'juegoNueve conArsenal'
+            'juegoOnce conTigre'
+            'juegoTrece conBoca'
+            'juegoQuince conSlo'
+            'juegoDiesisiete conArgJr';
+        justify-items: center;
+    }
+
+}
+
+/* Servicios */
+
+.acceso {
+    grid-area: accesoCancha;
+}
+
+.ubicaciones {
+    grid-area: canchaUbicac;
+    width: 100%;
+}
+
+.benefVit {
+    grid-area: vitalicios;
+}
+
+.benefAbon {
+    grid-area: abonados;
+}
+
+.benefSoc {
+    grid-area: socios;
+}
+
+.benefNoSoc {
+    grid-area: noSocios;
+}
+
+.beneficiados {
+    margin: 1rem 0 3rem 0;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 2rem;
+    grid-template-areas:
+        'accesoCancha'
+        'canchaUbicac'
+        'vitalicios'
+        'abonados'
+        'socios'
+        'noSocios';
+    justify-items: center;
+}
+
+@media screen and (min-width: 600px) {
+
+    .benefVit {
+        grid-area: vitalicios;
+    }
+
+    .benefAbon {
+        grid-area: abonados;
+    }
+
+    .benefSoc {
+        grid-area: socios;
+    }
+
+    .benefNoSoc {
+        grid-area: noSocios;
+    }
+
+    @media screen and (min-width:1024px) {
+
+        .beneficiados {
+            margin: 1rem 0 3rem 0;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 5rem auto;
+            gap: 2rem;
+            grid-template-areas:
+                'accesoCancha accesoCancha'
+                'canchaUbicac canchaUbicac'
+                'vitalicios abonados'
+                'socios noSocios';
+            justify-items: center;
+        }
+    }
+}
+
+
+/*Galeria */
+
+.galeriasRacing {
+    width: 100%;
+    height: 100%;
+}
+
+
+.momentos {
+    grid-area: h1Momentos;
+}
+
+.momentos {
+    color: $color;
+}
+
+.momentos {
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+}
+
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.videoUno {
+    grid-area: unoVideo;
+    width: 100%;
+}
+
+.videoDos {
+    grid-area: dosVideo;
+    width: 100%;
+}
+
+.videoTres {
+    grid-area: tresVideo;
+    width: 100%;
+}
+
+.videoCuatro {
+    grid-area: cuatroVideo;
+    width: 100%;
+}
+
+.videoCinco {
+    grid-area: cincoVideo;
+    width: 100%;
+}
+
+.videoSeis {
+    grid-area: seisVideo;
+    width: 100%;
+}
+
+.videoSiete {
+    grid-area: sieteVideo;
+    width: 100%;
+}
+
+.videoOcho {
+    grid-area: ochoVideo;
+    width: 100%;
+}
+
+.galeriaRacing {
+    margin: 1rem 0;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    gap: 2rem;
+    grid-template-areas:
+        'h1Momentos'
+        'unoVideo'
+        'dosVideo'
+        'tresVideo'
+        'cuatroVideo'
+        'cincoVideo'
+        'seisVideo'
+        'sieteVideo'
+        'ochoVideo';
+    justify-items: center;
+}
+
+@media screen and (min-width: 600px) {
+
+    .momentos {
+        font-size: 2rem;
+    }
+
+    footer {
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .redesFooter {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: $align-items;
+    }
+
+    .redesFooter img {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .galeriaRacing {
+        margin: 1rem 0 3rem 0;
+        padding: 0 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 5rem auto;
+        gap: 2rem;
+        grid-template-areas:
+            'h1Momentos h1Momentos'
+            'unoVideo dosVideo'
+            'tresVideo cuatroVideo'
+            'cincoVideo seisVideo'
+            'sieteVideo ochoVideo';
+        justify-items: center;
+    }
+
+    .momentos {
+        grid-area: h1Momentos;
+        display: flex;
+        align-items: $align-items;
+    }
+
+}
+
+
+/* Contacto */
+
+.informaciones {
+    width: 100%;
+    height: 100%;
+}
+
+.infoRacing {
+    grid-area: noticiasRacing;
+}
+
+.infoRacing {
+    width: 100%;
+    color: $color;
+    margin: 2rem;
+    font-size: $font-size;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: $text-align;
+
+}
+
+.infoRacing {
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+}
+
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

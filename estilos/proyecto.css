@@ -1,0 +1,527 @@
+.beneficiados {
+  width: 100%;
+  height: 100%;
+}
+
+.beneficiados h1 {
+  color: rgb(18, 39, 223);
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+}
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.beneficiados p {
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid 6px rgb(54, 178, 250);
+}
+
+@media screen and (min-width: 600px) {
+  .beneficiados {
+    font-size: 2rem;
+  }
+  .beneficiados .p {
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 6px rgb(54, 178, 250);
+    text-align: left;
+  }
+}
+/* Animaciones */
+.beneficiados p {
+  height: 100%;
+  background: rgb(195, 244, 253);
+  background: linear-gradient(90deg, rgb(195, 244, 253) 48%, rgb(0, 212, 255) 69%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav {
+  display: flex;
+  justify-content: right;
+  font-size: x-large;
+}
+
+.partidosEnCasa {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.partidosEnCasa h1 {
+  color: rgb(18, 39, 223);
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+}
+.partidosEnCasa p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  color: rgb(18, 39, 223);
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+}
+
+/* index */
+.club {
+  color: rgb(18, 39, 223);
+  margin: 2rem;
+  display: flex;
+  font-size: x-large;
+  border: 5px solid lightblue;
+  border-radius: 10%;
+  background-color: rgb(198, 235, 250);
+}
+
+.rac {
+  color: rgb(18, 39, 223);
+  margin: 3rem;
+  text-shadow: rgb(150, 215, 243) 4px 2px;
+}
+
+.altura {
+  height: 30rem;
+  margin: 3rem;
+}
+
+footer {
+  background-color: rgb(54, 178, 250);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(17, 17, 224) 36%, rgb(0, 212, 255) 59%);
+}
+footer img {
+  width: 70%;
+}
+footer .redesFooter {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+footer .redesFooter div {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 600px) {
+  footer {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+  }
+  .redesFooter {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .redesFooter img {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(54, 178, 250);
+  }
+  .redesFooter {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+  }
+  .redesFooter div {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+  }
+}
+/* Partidos */
+.localia {
+  grid-area: h1Locales;
+}
+
+.fecha9 {
+  grid-area: juegoNueve;
+}
+
+.racVar {
+  grid-area: conArsenal;
+  width: 100%;
+}
+
+.fecha11 {
+  grid-area: juegoOnce;
+}
+
+.racVtigre {
+  grid-area: conTigre;
+  width: 100%;
+}
+
+.fecha13 {
+  grid-area: juegoTrece;
+}
+
+.racVboca {
+  grid-area: conBoca;
+  width: 100%;
+}
+
+.fecha15 {
+  grid-area: juegoQuince;
+}
+
+.racVslo {
+  grid-area: conSlo;
+  width: 100%;
+}
+
+.fecha17 {
+  grid-area: juegoDiesisiete;
+}
+
+.racVarg {
+  grid-area: conArgJr;
+  width: 100%;
+}
+
+.partidosEnCasa {
+  margin: 1rem 0;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  gap: 2rem;
+  grid-template-areas: "h1Locales" "juegoNueve" "conArsenal" "juegoOnce" "conTigre" "juegoTrece" "conBoca" "juegoQuince" "conSlo" "juegoDiesisiete" "conArgJr";
+  justify-items: center;
+}
+
+@media screen and (min-width: 600px) {
+  .partidosEnCasa .h1 {
+    font-size: 2rem;
+  }
+  .partidosEnCasa p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .localia {
+    grid-area: h1Locales;
+    display: flex;
+    align-items: center;
+  }
+  .fecha9 {
+    grid-area: juegoNueve;
+    display: flex;
+    align-items: center;
+  }
+  .fecha11 {
+    grid-area: juegoOnce;
+    display: flex;
+    align-items: center;
+  }
+  .fecha13 {
+    grid-area: juegoTrece;
+    display: flex;
+    align-items: center;
+  }
+  .fecha15 {
+    grid-area: juegoQuince;
+    display: flex;
+    align-items: center;
+  }
+  .fecha17 {
+    grid-area: juegoDiesisiete;
+    display: flex;
+    align-items: center;
+  }
+  .partidosEnCasa {
+    margin: 1rem 0 3rem 0;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5rem auto;
+    gap: 2rem;
+    grid-template-areas: "h1Locales h1Locales" "juegoNueve conArsenal" "juegoOnce conTigre" "juegoTrece conBoca" "juegoQuince conSlo" "juegoDiesisiete conArgJr";
+    justify-items: center;
+  }
+}
+/* Servicios */
+.acceso {
+  grid-area: accesoCancha;
+}
+
+.ubicaciones {
+  grid-area: canchaUbicac;
+  width: 100%;
+}
+
+.benefVit {
+  grid-area: vitalicios;
+}
+
+.benefAbon {
+  grid-area: abonados;
+}
+
+.benefSoc {
+  grid-area: socios;
+}
+
+.benefNoSoc {
+  grid-area: noSocios;
+}
+
+.beneficiados {
+  margin: 1rem 0 3rem 0;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  gap: 2rem;
+  grid-template-areas: "accesoCancha" "canchaUbicac" "vitalicios" "abonados" "socios" "noSocios";
+  justify-items: center;
+}
+
+@media screen and (min-width: 600px) {
+  .benefVit {
+    grid-area: vitalicios;
+  }
+  .benefAbon {
+    grid-area: abonados;
+  }
+  .benefSoc {
+    grid-area: socios;
+  }
+  .benefNoSoc {
+    grid-area: noSocios;
+  }
+}
+@media screen and (min-width: 600px) and (min-width: 1024px) {
+  .beneficiados {
+    margin: 1rem 0 3rem 0;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5rem auto;
+    gap: 2rem;
+    grid-template-areas: "accesoCancha accesoCancha" "canchaUbicac canchaUbicac" "vitalicios abonados" "socios noSocios";
+    justify-items: center;
+  }
+}
+/*Galeria */
+.galeriasRacing {
+  width: 100%;
+  height: 100%;
+}
+
+.momentos {
+  grid-area: h1Momentos;
+}
+
+.momentos {
+  color: rgb(18, 39, 223);
+}
+
+.momentos {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.videoUno {
+  grid-area: unoVideo;
+  width: 100%;
+}
+
+.videoDos {
+  grid-area: dosVideo;
+  width: 100%;
+}
+
+.videoTres {
+  grid-area: tresVideo;
+  width: 100%;
+}
+
+.videoCuatro {
+  grid-area: cuatroVideo;
+  width: 100%;
+}
+
+.videoCinco {
+  grid-area: cincoVideo;
+  width: 100%;
+}
+
+.videoSeis {
+  grid-area: seisVideo;
+  width: 100%;
+}
+
+.videoSiete {
+  grid-area: sieteVideo;
+  width: 100%;
+}
+
+.videoOcho {
+  grid-area: ochoVideo;
+  width: 100%;
+}
+
+.galeriaRacing {
+  margin: 1rem 0;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  gap: 2rem;
+  grid-template-areas: "h1Momentos" "unoVideo" "dosVideo" "tresVideo" "cuatroVideo" "cincoVideo" "seisVideo" "sieteVideo" "ochoVideo";
+  justify-items: center;
+}
+
+@media screen and (min-width: 600px) {
+  .momentos {
+    font-size: 2rem;
+  }
+  footer {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+  }
+  .redesFooter {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .redesFooter img {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .galeriaRacing {
+    margin: 1rem 0 3rem 0;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5rem auto;
+    gap: 2rem;
+    grid-template-areas: "h1Momentos h1Momentos" "unoVideo dosVideo" "tresVideo cuatroVideo" "cincoVideo seisVideo" "sieteVideo ochoVideo";
+    justify-items: center;
+  }
+  .momentos {
+    grid-area: h1Momentos;
+    display: flex;
+    align-items: center;
+  }
+}
+/* Contacto */
+.informaciones {
+  width: 100%;
+  height: 100%;
+}
+
+.infoRacing {
+  grid-area: noticiasRacing;
+}
+
+.infoRacing {
+  width: 100%;
+  color: rgb(18, 39, 223);
+  margin: 2rem;
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.infoRacing {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=proyecto.css.map */
