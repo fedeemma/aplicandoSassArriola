@@ -4,3 +4,29 @@ $font-size: x-large;
 $font-family: Arial, Helvetica, sans-serif;
 $text-align: center;
 $align-items: center;
+
+@mixin medidas($height,$width){
+    height:$height;
+    width: $width;
+}
+
+.partidosEnCasa {
+    @include medidas(100%, 100%)
+}
+
+.galeriasRacing {
+    @include medidas(100%, 100%)
+}
+
+.informaciones{
+    @include medidas(100%, 100%)
+}
+
+.beneficiados{
+    @include medidas(100%, 100%)
+}
+
+.extensiones{
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 6px rgb(54, 178, 250);
+}
