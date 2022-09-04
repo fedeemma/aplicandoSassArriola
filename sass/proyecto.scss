@@ -5,13 +5,13 @@
 
 
 /* index */
-.club {
+.club{
     color: $color;
-    margin: 2rem;
+    margin: 1rem;
     display: flex;
     font-size: $font-size;
     border: 5px solid lightblue;
-    border-radius: 10%;
+    border-radius: 2%;
     background-color: rgb(198, 235, 250);
 }
 
@@ -25,6 +25,11 @@
     height: 30rem;
     margin: 3rem;
 }
+
+.anim:hover{ 
+    background-color:blue;
+}
+
 
 footer {
     background-color: rgb(54, 178, 250);
